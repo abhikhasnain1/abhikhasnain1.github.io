@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Abhik Hasnain | Portfolio</title>
+  <link href='https://fonts.googleapis.com/css2?family=Space+Mono&display=swap' rel='stylesheet'>
+  <style>
+    html { scroll-behavior: smooth; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      color: #000;
+      font-family: 'Space Mono', monospace;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+      border-bottom: 1px solid #ccc;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #000;
+    }
+    nav a {
+      color: #000;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #555;
+    }
+    main {
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .project-item {
+      align-self: start;
+      background: #f9f9f9;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      transition: 0.3s;
+      position: relative;
+    }
+    .project-item:hover {
+      border-color: #aaa;
+      background: #fff;
+    }
+    .project-item img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      margin-bottom: 0.5rem;
+
+    }
+    .link-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #000;
+      color: #000;
+      text-decoration: none;
+    }
+    .link-button:hover {
+      background: #000;
+      color: #fff;
+    }
+    .process-notes {
+      font-size: 0.95rem;
+      color: #333;
+      background: #f0f0f0;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-left: 2px solid #000;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #ccc;
+      font-size: 0.9rem;
+      color: #000;
+    }
+
+    .project-filler {
+  align-self: start;
+  display: flex;
+  justify-content: left;
+  padding-top: 1rem;
+}
+
+.project-filler img {
+  width: 400px;
+  height: auto;
+  /* opacity: 0.7;
+  transition: transform 0.3s ease; */
+}
+
+.project-filler img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abhik Hasnain</h1>
+    <nav>
+      <a href='#projects'>Projects</a>
+      <a href='#bio'>Bio</a>
+      <a href='#statement'>Statement</a>
+      <a href='#ramblings'>Ramblings</a>
+      <a href='#contact'>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><i>This portfolio is the final submission for the course DH 530: Interactive Storytelling for the Digital Humanities by Dr. PB Berge at the University of Alberta. The aim of this project is to introduce myself, my artistic statement/manifesto, and to showcase two of the ten experiments we each worked on. 
+</i></p>
+    <section id='projects'>
+      <h2>Projects</h2>
+      <div class='project-grid'>
+        <div class='project-item'>
+          <img src='images/front.PNG' alt='One-Sheet RPG'>
+          <strong>Ninith</strong>
+          <p>A one-sheet, print-and-play, sci-fi RPG set in space. Play as Ninith, a biomechanoid on the run.</p>
+          <div class='process-notes'>
+            Expanded for the final project into a double-sided RPG with original art, iconography, interface design and additional systems for sophistication and replayability. 
+            I've also made a reel for social media to serve as a trailer/promo video. Additionally, I prepared structured questions for early playtesters. Eight people have signed up so far.
+          </div>
+          <a href='orpg.html' class='link-button'>View Project</a>
+           
+        </div>
+        
+        <div class='project-item'>
+          <img src='images/ferna.PNG' alt='Ferna'>
+          <strong>ninith-based lifeforms</strong>
+          <p>A small art zine.</p>
+          <div class='process-notes'>
+            Loosely compiles the visual language of a fictional universe in the form of seven original digital artworks. I drew these pieces over the span of a month while working on my print-and-play RPG, so they are linked in ways I didn't anticipate. You'll find bits and pieces of Ninith's world in both.
+          </div>
+          <a href='https://nieremil.itch.io/ninith-based-lifeforms-zine' class='link-button'>View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id='bio'>
+      
+      <h2>Bio</h2>
+      
+      <p>Hello! My name is Abhik Hasnain. I am a digital humanities and game studies researcher. I am currently in my second year, completing my master’s in Digital Humanities at the University of Alberta. I am interested in studying how the socioeconomic system of Bangladesh can be leveraged to encourage an independent (or indie) game development culture and to grow sustainable economies of creation surrounding games.</p>
+      
+
+<p>More broadly speaking, I’m interested in building accessible tools for creating computational media. 
+
+  The tools we use for computational media production are shaped by Euro-American practices, pedagogical models, and localized subcultures. These tools embed particular experiences, assumptions about accessibility, and aesthetic norms that reflect the shared culture of computation of the communities that created them. Reinforcing these, in many cases, entire cultures of development and media consumption emerge around the affordances and stylistic choices of tools designed within these shared educational frameworks. Yet what often goes unexamined are the abstractions, epistemological biases and design standards these pedagogies hold close. </p>
+  
+  <p>
+  <ul style="list-style-type:square;">
+  <li>Do pedagogies of computational media, therefore, have to inevitably stumble and struggle in attempts to reach communities they were not designed for? <br></li>
+  <li>What, then, are effective exercises in producing decolonized pedagogies of computational media fit for communities in the Global South? <br></li>
+  <li>Most importantly, what does the future of community-based design look like for building accessible, decentralized tools to create computational media? <br></li>
+</ul>  
+</p>
+      <!-- <a href='cv.pdf' class='link-button' target='_blank'>Download CV</a> -->
+    </section>
+
+    <section id='statement'>
+      <h2>Artist Statement</h2>
+      <p>Process is art. I believe art is woven into the attempted synchronization of the process of making, an attribute lost when the brush is put down. Isn’t it incredibly fun to search for semblances of coherence in scattered nodes strung together by temporal proximity? Or is it just an exercise in whimsy, a meaningful meaningless frolic across mediums with which our relationships have grown to feel like home? Maybe neither. Hopefully, both.
+
+</p>
+<p>
+  </section>
+  <section id='ramblings'>
+  <h2>Ramblings</h2>
+  
+  I like to draw and write as I listen to sci-fi ambient music. One of my favorite micro hobbies is discovering obscure multihour compilation tracks on YouTube made by creators with names you won’t remember. But more than the music, I am drawn to the art they use. Usually, they are taken from concept artists on Artstation. Sometimes these are generic but sprawling sci-fi landscapes set in strange, unfamiliar, alien deserts. Sometimes they are space stations and spaceships or just space in all its enormity. Almost always, they are liminal spaces that hint at residues of life without any sign of organic motion. Maybe a soul or three in the distance. Just enough out of reach to make the wildest guesses. It’s the kind of art that leaves you longing to be etched into the canvas. As if that will somehow bring you closer to the adventure of impossible worlds. Chip away a bit at the suffering of knowing the boundaries of your explorable space. You may have seen them many times before. During mindless scrolls, gone in a flash, underneath the motion blur of a thumb, and thumbnails organized neatly, whooshing by. And you may have consistently ignored their occasional appearances when the grid came to a halt. Particularly frustrating is when there are no artist credits provided. Who made this? How dare you rob me of the joy of finding souls to string myself to as I ride the futile waves of consciousness? You made this? And the music? So, you just create breathtaking original art and music to daydream to as a full-time hustle or a side gig, and you are part of a whole subgenre of YouTube creators who have been doing so since the birth of YouTube and will continue to do so until the death of the godzilla known as Google, and you do not even care about putting your name forward?</p>
+<p><h1>Every single time I have dreamt, I realized I have dreamt too small.</h1></p>
+    </section>
+
+    <section id='contact'>
+      <h2>Contact</h2>
+      <p>For project inquiries, collaborations, or academic interests:</p>
+      <p>
+        <a href='mailto:abhik1@ualberta.ca' class='link-button'>Email</a>
+        <a href='https://nieremil.itch.io/' class='link-button' target='_blank'>Itch</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+     --- 2025 | Abhik Hasnain ---
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
